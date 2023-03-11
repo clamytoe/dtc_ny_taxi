@@ -3,15 +3,15 @@ version: 2
 sources:
   - name: staging
     database: dtc_ny_taxi_tripdata
-    # schema: main
+    schema: main
 
     tables:
-      - name: green_tripdata
-      - name: yellow_tripdata
-      - name: fhv_tripdata
+      - name: green
+      - name: yellow
+      - name: fhv
 
 models:
-  - name: stg_green_tripdata
+  - name: stg_green
     description: >
       Trip made by green taxis, also known as boro taxis and street-hail liveries.
       Green taxis may respond to street hails,but only in the areas indicated in green on the
@@ -102,7 +102,7 @@ models:
       - name: Total_amount
         description: The total amount charged to passengers. Does not include cash tips.
 
-  - name: stg_yellow_tripdata
+  - name: stg_yellow
     description: >
       Trips made by New York City's iconic yellow taxis. 
       Yellow taxis are the only vehicles permitted to respond to a street hail from a passenger in all five
@@ -194,7 +194,7 @@ models:
       - name: Total_amount
         description: The total amount charged to passengers. Does not include cash tips.
 
-  - name: stg_fhv_tripdata
+  - name: stg_fhv
     description: >
       For-Hire Vehicle (“FHV”) trip records include fields capturing the dispatching base 
       license number and the pick-up date, time, and taxi zone location ID (shape file below). 
