@@ -1,13 +1,24 @@
-Welcome to your new dbt project!
+# Data Engineering Zoomcamp
 
-### Using the starter project
+## Piperider Workshop
 
-Try running the following commands:
-- dbt run
-- dbt test
+The workshop repo can be found at InfuseAI's [taxi_rides_ny_duckdb](https://github.com/InfuseAI/taxi_rides_ny_duckdb) repo.
 
+### Project workflow
 
-### Resources:
+- `dbt run --var 'is_test_run: false'`
+- `piperider run`
+- `make changes to model`
+- `dbt run --var 'is_test_run: false'`
+- `piperider run`
+- `piperider compare-reports --last`
+
+### Homework
+
+The homework for this project can be found here at my [DE Zoomcamp](https://github.com/clamytoe/data-engineering-zoomcamp/blob/main/cohorts/2023/workshops/01-workshop.md) repo.
+
+### Resources
+
 - Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
 - Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
 - Join the [chat](https://community.getdbt.com/) on Slack for live discussions and support
