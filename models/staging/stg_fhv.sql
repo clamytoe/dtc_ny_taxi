@@ -4,7 +4,7 @@ with tripdata as
 (
   select *,
     row_number() over(partition by dispatching_base_num, pickup_datetime) as rn
-  from {{ source('staging','fhv') }}
+  from {{ source('parquet','fhv') }}
   where dispatching_base_num is not null 
 )
 select

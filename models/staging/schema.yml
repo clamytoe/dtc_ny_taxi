@@ -1,14 +1,14 @@
 version: 2
 
 sources:
-  - name: staging
-    database: dtc_ny_taxi_tripdata
-    schema: main
-
+  - name: parquet
+    meta:
+      external_location: "read_parquet('/home/clamytoe/Projects/localDB/datasets/{name}/*.parquet.snappy')"
     tables:
+      - name: fhv
       - name: green
       - name: yellow
-      - name: fhv
+      - name: zone_lookup
 
 models:
   - name: stg_green
