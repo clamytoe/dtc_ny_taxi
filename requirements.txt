@@ -1,0 +1,8 @@
+chardet==5.1.0
+dbt-duckdb==1.4.0
+duckcli==0.2.1
+duckdb-engine==0.6.9
+msgpack==1.0.5
+pip-chill==1.0.1
+piperider==0.20.1
+pyspark==3.3.2
