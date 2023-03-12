@@ -16,6 +16,7 @@ d_zones as (
 select 
     fhv_data.tripid,
     fhv_data.pickup_locationid,
+    fhv_data.dispatching_base_num,
     pickup_zone.borough as pickup_borough, 
     pickup_zone.zone as pickup_zone, 
     fhv_data.dropoff_locationid,
